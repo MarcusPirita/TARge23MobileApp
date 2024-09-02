@@ -4,7 +4,7 @@ using Microsoft.UI.Windowing;
 using Windows.Graphics;
 #endif
 
-using Views;
+using SciCalc.Views;
 
 namespace SciCalc
 {
@@ -12,6 +12,7 @@ namespace SciCalc
     {
         const int WindowWidth = 540;
         const int WindowHeight = 1000;
+
         public App()
         {
             InitializeComponent();
