@@ -73,14 +73,338 @@
         </Grid>
         
         <!--Scientific Operators-->
-        <!--Row-->
+        <!--2 Row-->
         <Button 
             Grid.Row="2"
             Grid.Column="0"
-            ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonStyle}"
-            Text="MEAN" />
+            Text="MEAN"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="MEAN"/>
+        <Button 
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="MOD"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="MOD"/>
+        <Button 
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="STD"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="STD"/>
+        <Button 
+            Grid.Row="2"
+            Grid.Column="3"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="VAR"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="VAR"/>
+        <Button 
+            Grid.Row="2"
+            Grid.Column="4"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="FACT"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="FACT"/>
+
+        <!--3 Row-->
+        <Button 
+            Grid.Row="3"
+            Grid.Column="0"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="SIN"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="SIN"/>
+        <Button 
+            Grid.Row="3"
+            Grid.Column="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="COS"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="COS"/>
+        <Button 
+            Grid.Row="3"
+            Grid.Column="2"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="TAN"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="TAN"/>
+        <Button 
+            Grid.Row="3"
+            Grid.Column="3"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="LOG"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="LOG"/>
+        <Button 
+            Grid.Row="3"
+            Grid.Column="4"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="EXP"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="EXP"/>
+
+        <!--4 Row-->
+        <Button 
+            Grid.Row="4"
+            Grid.Column="0"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="ASIN"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="ASIN"/>
+        <Button 
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="ACOS"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="ACOS"/>
+        <Button 
+            Grid.Row="4"
+            Grid.Column="2"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="ATAN"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="ATAN"/>
+        <Button 
+            Grid.Row="4"
+            Grid.Column="3"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="LOG10"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="LOG10"/>
+        <Button 
+            Grid.Row="4"
+            Grid.Column="4"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="POW"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="POW"/>
+
+        <!--5 Row-->
+        <Button 
+            Grid.Row="5"
+            Grid.Column="0"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="SQRT"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="SQRT"/>
+        <Button 
+            Grid.Row="5"
+            Grid.Column="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="ABS"
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="ABS"/>
+        <Button 
+            Grid.Row="5"
+            Grid.Column="2"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text=","
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter=","/>
+        <Button 
+            Grid.Row="5"
+            Grid.Column="3"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="("
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter="("/>
+        <Button 
+            Grid.Row="5"
+            Grid.Column="4"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text=")" 
+            Command="{Binding RegionOperatorCommand}"
+            CommandParameter=")"/>
+        
+        <!--Numbers and symbols-->
+        <Button 
+            Grid.Row="6"
+            Grid.Column="0"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="7"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="7"/>
+
+        <Button 
+            Grid.Row="6"
+            Grid.Column="1"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="8"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="8"/>
+        <Button 
+            Grid.Row="6"
+            Grid.Column="2"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="9"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="9"/>
+        <Button
+            Grid.Row="6"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="AC"
+            FontSize="28"
+            Command="{Binding MathOperatorCommand}"/>
+
+        <!--Numbers and symbols Row 2-->
+        <Button 
+            Grid.Row="7"
+            Grid.Column="0"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="4"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="4"/>
+        <Button 
+            Grid.Row="7"
+            Grid.Column="1"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="5"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="5"/>
+        <Button 
+            Grid.Row="7"
+            Grid.Column="2"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="6"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="6"/>
+        <Button
+            Grid.Row="7"
+            Grid.Column="3"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="×"
+            FontSize="28"
+            Command="{Binding MathOperatorCommand}"/>
+        <Button
+            Grid.Row="7"
+            Grid.Column="4"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="÷"
+            FontSize="28"
+            Command="{Binding MathOperatorCommand}"/>
+
+        <!--Numbers and symbols Row 3-->
+        <Button 
+            Grid.Row="8"
+            Grid.Column="0"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="1"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="1"/>
+        <Button 
+            Grid.Row="8"
+            Grid.Column="1"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="2"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="2"/>
+        <Button 
+            Grid.Row="8"
+            Grid.Column="2"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="3"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="3"/>
+        <Button
+            Grid.Row="8"
+            Grid.Column="3"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="+"
+            FontSize="28"
+            Command="{Binding MathOperatorCommand}"/>
+        <Button
+            Grid.Row="8"
+            Grid.Column="4"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="-"
+            FontSize="28"
+            Command="{Binding MathOperatorCommand}"/>
+
+        <!--Numbers and symbols Row 3-->
+        <Button 
+            Grid.Row="9"
+            Grid.Column="0"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="0"
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="0"/>
+        <Button 
+            Grid.Row="9"
+            Grid.Column="1"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="."
+            Command="{Binding NumberInputCommand}"
+            CommandParameter="."/>
+        <Button 
+            Grid.Row="9"
+            Grid.Column="2"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="⌫"
+            Command="{Binding BackspaceCommand}"
+            CommandParameter="⌫"/>
+        <Button
+            Grid.Row="9"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="="
+            FontSize="28"
+            Command="{Binding CalculateCommand}"/>
+        
+        <!--Border Lines-->
+        <BoxView
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Fill"
+            VerticalOptions="End"
+            HeightRequest="1"
+            BackgroundColor="{StaticResource BorderColor}"/>
+
+        <BoxView
+            Grid.Row="7"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Fill"
+            VerticalOptions="End"
+            HeightRequest="1"
+            BackgroundColor="{StaticResource BorderColor}"/>
+
+        <BoxView
+            Grid.Row="8"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            HorizontalOptions="Fill"
+            VerticalOptions="End"
+            HeightRequest="1"
+            BackgroundColor="{StaticResource BorderColor}"/>
 
     </Grid>
 </ContentPage>

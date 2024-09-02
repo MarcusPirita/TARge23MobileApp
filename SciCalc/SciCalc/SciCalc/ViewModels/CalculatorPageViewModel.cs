@@ -25,7 +25,7 @@ namespace SciCalc.ViewModels
         [RelayCommand]
         private void Calculate()
         {
-            if(InputText.Length == 0)
+            if (InputText.Length == 0)
             {
                 return;
             }
@@ -50,7 +50,7 @@ namespace SciCalc.ViewModels
             }
         }
 
-        private string NormalizeInputString ()
+        private string NormalizeInputString()
         {
             Dictionary<string, string> _opMapper = new()
             {
