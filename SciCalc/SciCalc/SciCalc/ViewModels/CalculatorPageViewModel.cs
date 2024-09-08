@@ -1,9 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
+
 namespace SciCalc.ViewModels
 {
-    internal partial class CalculatorPageViewModel : ObservableObject
+    [INotifyPropertyChanged]
+    internal partial class CalculatorPageViewModel //: ObservableObject
     {
         [ObservableProperty]
         private string inputText = string.Empty;
@@ -20,7 +22,6 @@ namespace SciCalc.ViewModels
             InputText = string.Empty;
             isSciOpWaiting = false;
         }
-
 
         [RelayCommand]
         private void Calculate()
@@ -65,7 +66,7 @@ namespace SciCalc.ViewModels
                 {"LOG", "Log"},
                 {"EXP", "Exp"},
                 {"LOG10", "Log10"},
-                {"POW", "Poq"},
+                {"POW", "Pow"},
                 {"SQRT", "Sqrt"},
                 {"ABS", "Abs"},
             };
@@ -75,7 +76,6 @@ namespace SciCalc.ViewModels
             foreach (var key in _opMapper.Keys)
             {
                 retString = retString.Replace(key, _opMapper[key]);
-
             }
 
             return retString;
@@ -95,6 +95,7 @@ namespace SciCalc.ViewModels
         {
             InputText += key;
         }
+
         [RelayCommand]
         private void MathOperator(string op)
         {
