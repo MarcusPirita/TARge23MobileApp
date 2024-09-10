@@ -359,7 +359,7 @@
                     <Image
                         WidthRequest="30"
                         HeightRequest="30"
-                        Source="imgexplore.png"
+                        Source="imgprofile.png"
                         Grid.Row="2"
                         HorizontalOptions="Center" />
 
