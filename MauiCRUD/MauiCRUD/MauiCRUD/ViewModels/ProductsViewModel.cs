@@ -5,7 +5,6 @@ using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.Input;
 
 
-
 namespace MauiCRUD.ViewModels
 {
     public partial class ProductsViewModel : ObservableObject
@@ -56,6 +55,7 @@ namespace MauiCRUD.ViewModels
             }
             catch (Exception)
             {
+
                 throw;
             }
             finally
@@ -103,6 +103,7 @@ namespace MauiCRUD.ViewModels
                     else
                     {
                         await Shell.Current.DisplayAlert("Error", "Product updating error", "Ok");
+                        return;
                     }
                 }
                 SetOperatingProductCommand.Execute(new());

@@ -1,6 +1,7 @@
 ﻿using SQLite;
 using System.Linq.Expressions;
 
+
 namespace MauiCRUD.Data
 {
     public class DatabaseContext : IAsyncDisposable
@@ -55,7 +56,7 @@ namespace MauiCRUD.Data
         public async Task<bool> DeleteItemAsync<TTable>(TTable item) where TTable : class, new()
         {
             await CreateTableIfNotExists<TTable>();
-            return await Database.UpdateAsync(item) > 0;
+            return await Database.DeleteAsync(item) > 0;
         }
 
         public async Task<bool> DeleteItemByKeyAsync<TTable>(object primaryKey) where TTable : class, new()
@@ -65,7 +66,6 @@ namespace MauiCRUD.Data
         }
 
         public async ValueTask DisposeAsync() => await _connection.CloseAsync();
-
 
         public async Task<IEnumerable<TTable>> GetFilteredAsync<TTable>(Expression<Func<TTable, bool>> predicate) where TTable: class, new()
         {
