@@ -45,7 +45,7 @@
                               ColumnDefinitions="*, Auto"
                               RowSpacing="5"
                               Padding="5"
-                              BackgroundColor="#ECECEC">
+                              BackgroundColor="MediumPurple">
                             <Label Grid.Row="0"
                                    Grid.Column="0"
                                    Text="{Binding Name}"
@@ -132,7 +132,7 @@
                         <Button.Triggers>
                             <DataTrigger TargetType="Button"
                                          Binding="{Binding OperatingProduct.Id}"
-                                         Value="0"
+                                         Value="0">
                                 <Setter Property="Text" Value="Create Product" />
                             </DataTrigger>
                         </Button.Triggers>
